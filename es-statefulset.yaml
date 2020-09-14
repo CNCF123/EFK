@@ -1,0 +1,11 @@
+注释下面的健康检查
+          # livenessProbe:
+          #   tcpSocket:
+          #     port: transport
+          #   initialDelaySeconds: 5
+          #   timeoutSeconds: 10
+          # readinessProbe:
+          #   tcpSocket:
+          #     port: transport
+          #   initialDelaySeconds: 5
+          #   timeoutSeconds: 10
