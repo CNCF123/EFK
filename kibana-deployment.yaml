@@ -1,0 +1,3 @@
+注释下面两行
+# - name: SERVER_BASEPATH
+# value: /api/v1/namespaces/kube-system/services/kibana-logging/proxy
