@@ -56,7 +56,7 @@ spec:
             runAsUser: 0
           volumeMounts:
             - name: logpath
-              mountPath: /data/log/app/
+              mountPath: /data/log/demo/
             - name: filebeatconf
               mountPath: /usr/share/filebeat/filebeat.yml 
               subPath: usr/share/filebeat/filebeat.yml  ##注意，这里需要 subPath
