@@ -24,7 +24,7 @@ data:
         negate: true
         match: after
     output.kafka:
-      hosts: ["kafka:9092"]
+      hosts: ["kafkaUrl:9092"]
       topic: "test-filebeat"
       codec.json:
         pretty: false
