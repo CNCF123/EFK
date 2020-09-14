@@ -1,3 +1,10 @@
-注释下面两行
-# - name: SERVER_BASEPATH
-# value: /api/v1/namespaces/kube-system/services/kibana-logging/proxy
+        env:
+          - name: ELASTICSEARCH_HOSTS
+            value: http://elasticsearch-logging:9200 # 注意elasticsearch的url地址
+          - name: SERVER_NAME
+            value: kibana-logging
+          # 注释下面两行
+          # - name: SERVER_BASEPATH
+          #  value: /api/v1/namespaces/kube-system/services/kibana-logging/proxy
+          - name: SERVER_REWRITEBASEPATH
+            value: "false"
